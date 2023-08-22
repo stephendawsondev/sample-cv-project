@@ -23,6 +23,12 @@ header {
   background-color: #525252;
 }
 
+/* Special paddings, margins and text */
+.general-sub {
+  font-family: "Exo", sans-serif;
+  font-weight: 300;
+  color: #fafafa;
+}
 /* Heading */
 
 .heading {
@@ -112,4 +118,49 @@ header {
 /* hover.css */
 .hvr-sweep-to-bottom:before {
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: #626262;
+  color: #fafafa;
+  min-height: 120px;
+  margin: 0;
+}
+
+footer > :first-child {
+  padding: 1.5em;
+}
+
+.cv-pdf {
+  margin-left: 0.5em;
+}
+
+.cv-pdf svg {
+  fill: #fafafa;
+  transition: fill 0.35s ease-in-out;
+  -moz-transition: fill 0.35s ease-in-out;
+  -webkit-transition: fill 0.35s ease-in-out;
+}
+
+.cv-pdf:hover svg {
+  fill: #de8460;
+}
+
+footer .social-links a {
+  display: inline-block;
+  width: 32px;
+  padding: 0.25em;
+}
+
+footer .social-links a svg {
+  max-width: 100%;
+}
+
+footer .social-links a:hover svg {
+  scale: 1.2;
+}
+
+.social-links .list-inline-item + .list-inline-item {
+  margin-left: 0.5em;
 }
