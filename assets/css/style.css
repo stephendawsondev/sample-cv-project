@@ -34,7 +34,6 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh;
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
@@ -71,6 +70,10 @@ header {
   padding: 0;
 }
 
+#nav {
+  margin: 0;
+}
+
 .menuitem {
   height: 120px;
   text-align: center;
@@ -104,4 +107,9 @@ header {
   color: #fafafa;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+/* hover.css */
+.hvr-sweep-to-bottom:before {
+  background-color: rgba(0, 0, 0, 0.2);
 }
