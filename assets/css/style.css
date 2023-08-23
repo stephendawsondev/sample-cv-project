@@ -175,3 +175,12 @@ footer .social-links a:hover svg {
 .social-links .list-inline-item + .list-inline-item {
   margin-left: 0.5em;
 }
+
+/* Three reasons */
+.three-reasons-icon {
+  display: block;
+  width: 2.75rem;
+  height: auto;
+  margin: 0 auto;
+  fill: #e67e22;
+}
