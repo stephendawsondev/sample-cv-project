@@ -32,6 +32,10 @@ header {
   background-color: #525252;
 }
 
+.bg-color-work-history {
+  background-color: #9b59b6;
+}
+
 /* Special paddings, margins and text */
 .general-sub {
   font-family: "Exo", sans-serif;
@@ -39,12 +43,14 @@ header {
   color: #fafafa;
 }
 
-.section-heading {
+.section-heading,
+.history-heading {
   font-family: "Exo", sans-serif;
   font-weight: 300;
   margin-top: 1.5em;
   margin-bottom: 1.25em;
 }
+
 /* Heading */
 
 .heading {
@@ -239,4 +245,50 @@ footer .social-links a:hover svg {
   margin-top: 2em;
   padding-left: 2em;
   padding-right: 2em;
+}
+
+/* Work History */
+.history-heading {
+  color: #fafafa;
+  margin-bottom: 2.5em;
+}
+
+.timeline-item {
+  padding: 4em 2em 0em 2em;
+  position: relative;
+  color: #fafafa;
+  border-left: 1px solid currentColor;
+}
+
+.timeline-item p {
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-item::before {
+  content: attr(data-dates);
+  font-family: "Exo", sans-serif;
+  position: absolute;
+  left: 2.5em;
+  top: 3em;
+  display: block;
+  font-size: 0.8rem;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 12px;
+  display: block;
+  top: 2.4em;
+  left: -8px;
+  background-color: #fafafa;
+}
+
+.history-items {
+  margin-bottom: 2.75em;
 }
