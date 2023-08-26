@@ -36,6 +36,10 @@ header {
   background-color: #9b59b6;
 }
 
+.bg-color-contact {
+  background-color: #fff;
+}
+
 /* Special paddings, margins and text */
 .general-sub {
   font-family: "Exo", sans-serif;
@@ -291,4 +295,30 @@ footer .social-links a:hover svg {
 
 .history-items {
   margin-bottom: 2.75em;
+}
+
+/* Contact */
+.contact-heading {
+  font-family: "Exo", sans-serif;
+  font-weight: 300;
+  margin-top: 1.25em;
+  margin-bottom: 1.45em;
+}
+
+.center-form {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+button[type="submit"] {
+  margin-top: 1em;
+  margin-bottom: 1.25em;
+  color: #fafafa;
+  background-color: #e67e22;
+}
+
+@media screen and (min-width: 992px) {
+  .center-form {
+    max-width: 50%;
+  }
 }
